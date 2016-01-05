@@ -113,6 +113,12 @@ nRoot =
     l <- length(obj$roots)
     for(i in 1:length(obj$roots)){
       l <- l + length(obj$root[[i]]$children)
+      for(j in 1:length(obj$root[[i]]$children)){
+        l <- l + length(obj$root[[i]]$children[[j]]$children)
+        for(k in 1:length(obj$root[[i]]$children[[j]]$children)){
+          l <- l + length(obj$root[[i]]$children[[j]]$children[[k]]$children)
+        }
+      }
     }
     l
   }
@@ -201,9 +207,14 @@ length.plant =
   function(x)
   {
     l = 0
-    for(j in 1:nPrimRoot(x)){
-      r <- x$roots[[j]]
-      l <- l + totalLength(r)
+    for(i in 1:nPrimRoot(x)){
+      l <- l + length(x$roots[[i]])
+      for(j in 1:length(x$roots[[i]]$children)){
+        l <- l + length(x$roots[[i]]$children[[j]])
+        for(k in 1:length(x$roots[[i]]$children[[j]]$children)){
+          l <- l + length(x$roots[[i]]$children[[j]]$children[[k]])
+        }
+      }
     }
     l
   }

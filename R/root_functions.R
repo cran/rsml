@@ -350,6 +350,9 @@ totalLength =
     l = length(obj)
     for(i in 1:nChild(obj)){
       l <- l + length(obj$children[[i]])
+      for(j in 1:nChild(obj$children[[i]])){
+        l <- l + length(obj$children[[i]]$children[j])
+      }
     }
     l
   }

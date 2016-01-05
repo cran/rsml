@@ -1,10 +1,10 @@
-7f8ab9526fbebc8b8b7b4f717707cd30 *DESCRIPTION
-79870bd799d6cfc2d7b08f4e793c6bb8 *NAMESPACE
+a3394bfab158128058662edf02d17e2b *DESCRIPTION
+81f2da3a6fe3075eff825b8a0fa09727 *NAMESPACE
 218f4bfe92c3550f5482aa7b2dd5ffe0 *R/RSML.R
 2e5afb07cdc8c71640d46e970cde423d *R/node_functions.R
-a330f39fa97b10e7311751c309281028 *R/plant_functions.R
-c1841f07bb2d5a6495492881605ac470 *R/root_functions.R
-208976fea55a508b234322f76a18ce80 *R/rsmlToList.R
+848d96fd1945d814279d9d50b534962a *R/plant_functions.R
+33bd6d8e6562ad32e40a333108912189 *R/root_functions.R
+f5e20c2cfd1f2b246f000b7796fc891f *R/rsmlToList.R
 ab3ccf33bf00f646e8d635d4e18e9d74 *R/rsmlToPlant.R
 6e2a1a46ad31b2e1d51505dda3978e49 *data/anagallis.rda
 a6949136f777c5ff1e9b5d31ec4a8636 *data/lupin.rda

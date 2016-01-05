@@ -8,15 +8,15 @@
 #' path <- "http://rootsystemml.github.io/images/examples/arabidopsis-simple.rsml"
 #' pl.list <- rsmlToList(path) # import the file as a list
 #' write.csv(pl.list$processed, "rsml-table.csv") # save it as a csv table
-
-
 #' 
+
+
 rsmlToList <- function(rsml.path){
     
   rsml <- xmlToList(xmlParse(rsml.path))
   plants <- rsml$scene
   
-  #️Get the properties used in this specific rsml file
+  # Get the properties used in this specific rsml file
   properties.list <- rsml$metadata$"property-definitions"
   properties.names <- vector(length = length(properties.list))
   for(i in 1:length(properties.list)){properties.names[i] <- properties.list[i]$"property-definition"$label}
